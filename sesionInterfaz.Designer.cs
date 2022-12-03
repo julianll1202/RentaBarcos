@@ -61,24 +61,25 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(174, 154);
+            this.label3.Location = new System.Drawing.Point(107, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 43);
+            this.label3.Size = new System.Drawing.Size(249, 40);
             this.label3.TabIndex = 4;
-            this.label3.Text = "LOGIN";
+            this.label3.Text = "Inicio de sesión";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btn_login
             // 
             this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(105)))));
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_login.Location = new System.Drawing.Point(182, 319);
+            this.btn_login.Location = new System.Drawing.Point(169, 313);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(89, 35);
             this.btn_login.TabIndex = 5;
-            this.btn_login.Text = "LOGIN";
+            this.btn_login.Text = "Iniciar sesión";
             this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
