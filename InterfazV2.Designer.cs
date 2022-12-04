@@ -29,6 +29,17 @@ namespace ProyectoRentaDeBarcos
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,22 +49,26 @@ namespace ProyectoRentaDeBarcos
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tb_buscarPropietario = new System.Windows.Forms.TextBox();
+            this.dgv_registroPropietario = new System.Windows.Forms.DataGridView();
+            this.IdPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrePropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoPPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoMPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_eliminarPropietario = new System.Windows.Forms.Button();
+            this.btn_actualizarPropietario = new System.Windows.Forms.Button();
+            this.btn_agregarPropietario = new System.Windows.Forms.Button();
+            this.btn_salirPropietario = new System.Windows.Forms.Button();
             this.ncliente_btn = new System.Windows.Forms.TabPage();
+            this.ref_btn = new System.Windows.Forms.Button();
             this.ncliente = new System.Windows.Forms.Button();
             this.tb_buscarClientes = new System.Windows.Forms.TextBox();
             this.dgv_registroClientes = new System.Windows.Forms.DataGridView();
@@ -70,7 +85,9 @@ namespace ProyectoRentaDeBarcos
             this.codigoPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_actualizarCliente = new System.Windows.Forms.Button();
             this.btn_eliminarCliente = new System.Windows.Forms.Button();
+            this.btn_salirCliente = new System.Windows.Forms.Button();
             this.tabRentas = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.tb_buscarRentas = new System.Windows.Forms.TextBox();
             this.dgv_registroRentas = new System.Windows.Forms.DataGridView();
             this.NumRenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,6 +99,7 @@ namespace ProyectoRentaDeBarcos
             this.btn_eliminarRenta = new System.Windows.Forms.Button();
             this.btn_actualizarRenta = new System.Windows.Forms.Button();
             this.btn_agregarRenta = new System.Windows.Forms.Button();
+            this.btn_salirRenta = new System.Windows.Forms.Button();
             this.nbarco = new System.Windows.Forms.TabPage();
             this.act_barco = new System.Windows.Forms.Button();
             this.n_barco = new System.Windows.Forms.Button();
@@ -97,6 +115,8 @@ namespace ProyectoRentaDeBarcos
             this.ColumnTarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCapacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnOcupado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Salir = new System.Windows.Forms.Button();
+            this.btn_Actualizar = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.act_btn = new System.Windows.Forms.Button();
             this.n_emp_btn = new System.Windows.Forms.Button();
@@ -111,41 +131,23 @@ namespace ProyectoRentaDeBarcos
             this.correoEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_eliminarEmpleado = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tb_buscarPropietario = new System.Windows.Forms.TextBox();
-            this.dgv_registroPropietario = new System.Windows.Forms.DataGridView();
-            this.btn_eliminarPropietario = new System.Windows.Forms.Button();
-            this.btn_actualizarPropietario = new System.Windows.Forms.Button();
-            this.btn_agregarPropietario = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tb_buscarT = new System.Windows.Forms.TextBox();
-            this.dgv_registroT = new System.Windows.Forms.DataGridView();
-            this.btn_eliminarT = new System.Windows.Forms.Button();
-            this.btn_actualizarT = new System.Windows.Forms.Button();
-            this.btn_agregarT = new System.Windows.Forms.Button();
-            this.ref_btn = new System.Windows.Forms.Button();
-            this.btn_salirCliente = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btn_salirRenta = new System.Windows.Forms.Button();
-            this.btn_Salir = new System.Windows.Forms.Button();
-            this.btn_Actualizar = new System.Windows.Forms.Button();
             this.btn_salirEmpleado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_salirPropietario = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
-            this.btn_salirT = new System.Windows.Forms.Button();
-            this.IdPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombrePropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoPPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoMPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correoPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tb_buscarT = new System.Windows.Forms.TextBox();
+            this.dgv_registroT = new System.Windows.Forms.DataGridView();
             this.NumRentaT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumEmpleadoT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_eliminarT = new System.Windows.Forms.Button();
+            this.btn_actualizarT = new System.Windows.Forms.Button();
+            this.btn_agregarT = new System.Windows.Forms.Button();
+            this.btn_salirT = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_registroPropietario)).BeginInit();
             this.ncliente_btn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registroClientes)).BeginInit();
             this.tabRentas.SuspendLayout();
@@ -154,8 +156,6 @@ namespace ProyectoRentaDeBarcos
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRegistro)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registroEmpleado)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_registroPropietario)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registroT)).BeginInit();
             this.SuspendLayout();
@@ -175,6 +175,215 @@ namespace ProyectoRentaDeBarcos
             this.tabControl1.Size = new System.Drawing.Size(982, 425);
             this.tabControl1.TabIndex = 0;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.tb_buscarPropietario);
+            this.tabPage2.Controls.Add(this.dgv_registroPropietario);
+            this.tabPage2.Controls.Add(this.btn_eliminarPropietario);
+            this.tabPage2.Controls.Add(this.btn_actualizarPropietario);
+            this.tabPage2.Controls.Add(this.btn_agregarPropietario);
+            this.tabPage2.Controls.Add(this.btn_salirPropietario);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(974, 399);
+            this.tabPage2.TabIndex = 4;
+            this.tabPage2.Text = "Propietarios";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(671, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(23, 23);
+            this.button2.TabIndex = 26;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // tb_buscarPropietario
+            // 
+            this.tb_buscarPropietario.Location = new System.Drawing.Point(6, 12);
+            this.tb_buscarPropietario.Name = "tb_buscarPropietario";
+            this.tb_buscarPropietario.Size = new System.Drawing.Size(221, 20);
+            this.tb_buscarPropietario.TabIndex = 18;
+            this.tb_buscarPropietario.Text = "Buscar";
+            this.tb_buscarPropietario.TextChanged += new System.EventHandler(this.tb_buscarPropietario_TextChanged);
+            // 
+            // dgv_registroPropietario
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgv_registroPropietario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_registroPropietario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_registroPropietario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_registroPropietario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdPropietario,
+            this.nombrePropietario,
+            this.apellidoPPropietario,
+            this.apellidoMPropietario,
+            this.telefonoPropietario,
+            this.correoPropietario});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_registroPropietario.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dgv_registroPropietario.EnableHeadersVisualStyles = false;
+            this.dgv_registroPropietario.GridColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgv_registroPropietario.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dgv_registroPropietario.Location = new System.Drawing.Point(6, 38);
+            this.dgv_registroPropietario.Name = "dgv_registroPropietario";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_registroPropietario.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
+            this.dgv_registroPropietario.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
+            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_registroPropietario.Size = new System.Drawing.Size(962, 189);
+            this.dgv_registroPropietario.TabIndex = 17;
+            this.dgv_registroPropietario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroPropietario_CellClick);
+            this.dgv_registroPropietario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroPropietario_CellContentClick);
+            // 
+            // IdPropietario
+            // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.IdPropietario.DefaultCellStyle = dataGridViewCellStyle3;
+            this.IdPropietario.HeaderText = "No. de propietario";
+            this.IdPropietario.Name = "IdPropietario";
+            // 
+            // nombrePropietario
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.nombrePropietario.DefaultCellStyle = dataGridViewCellStyle4;
+            this.nombrePropietario.HeaderText = "Nombre";
+            this.nombrePropietario.Name = "nombrePropietario";
+            // 
+            // apellidoPPropietario
+            // 
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.apellidoPPropietario.DefaultCellStyle = dataGridViewCellStyle5;
+            this.apellidoPPropietario.HeaderText = "Apellido paterno";
+            this.apellidoPPropietario.Name = "apellidoPPropietario";
+            // 
+            // apellidoMPropietario
+            // 
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.apellidoMPropietario.DefaultCellStyle = dataGridViewCellStyle6;
+            this.apellidoMPropietario.HeaderText = "Apellido materno";
+            this.apellidoMPropietario.Name = "apellidoMPropietario";
+            // 
+            // telefonoPropietario
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.telefonoPropietario.DefaultCellStyle = dataGridViewCellStyle7;
+            this.telefonoPropietario.HeaderText = "Teléfono";
+            this.telefonoPropietario.Name = "telefonoPropietario";
+            // 
+            // correoPropietario
+            // 
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.correoPropietario.DefaultCellStyle = dataGridViewCellStyle8;
+            this.correoPropietario.HeaderText = "Correo electrónico";
+            this.correoPropietario.Name = "correoPropietario";
+            // 
+            // btn_eliminarPropietario
+            // 
+            this.btn_eliminarPropietario.BackColor = System.Drawing.Color.Red;
+            this.btn_eliminarPropietario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_eliminarPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_eliminarPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminarPropietario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_eliminarPropietario.Location = new System.Drawing.Point(310, 242);
+            this.btn_eliminarPropietario.Name = "btn_eliminarPropietario";
+            this.btn_eliminarPropietario.Size = new System.Drawing.Size(85, 23);
+            this.btn_eliminarPropietario.TabIndex = 14;
+            this.btn_eliminarPropietario.Text = "Eliminar";
+            this.btn_eliminarPropietario.UseVisualStyleBackColor = false;
+            this.btn_eliminarPropietario.Click += new System.EventHandler(this.btn_eliminarPropietario_Click);
+            // 
+            // btn_actualizarPropietario
+            // 
+            this.btn_actualizarPropietario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
+            this.btn_actualizarPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_actualizarPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_actualizarPropietario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_actualizarPropietario.Location = new System.Drawing.Point(189, 242);
+            this.btn_actualizarPropietario.Name = "btn_actualizarPropietario";
+            this.btn_actualizarPropietario.Size = new System.Drawing.Size(101, 23);
+            this.btn_actualizarPropietario.TabIndex = 13;
+            this.btn_actualizarPropietario.Text = "Actualizar";
+            this.btn_actualizarPropietario.UseVisualStyleBackColor = false;
+            this.btn_actualizarPropietario.Click += new System.EventHandler(this.btn_actualizarPropietario_Click);
+            // 
+            // btn_agregarPropietario
+            // 
+            this.btn_agregarPropietario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
+            this.btn_agregarPropietario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_agregarPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_agregarPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregarPropietario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_agregarPropietario.Location = new System.Drawing.Point(6, 242);
+            this.btn_agregarPropietario.Name = "btn_agregarPropietario";
+            this.btn_agregarPropietario.Size = new System.Drawing.Size(164, 23);
+            this.btn_agregarPropietario.TabIndex = 12;
+            this.btn_agregarPropietario.Text = "Nuevo Propietario";
+            this.btn_agregarPropietario.UseVisualStyleBackColor = false;
+            this.btn_agregarPropietario.Click += new System.EventHandler(this.btn_agregarPropietario_Click);
+            // 
+            // btn_salirPropietario
+            // 
+            this.btn_salirPropietario.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
+            this.btn_salirPropietario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_salirPropietario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_salirPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salirPropietario.Location = new System.Drawing.Point(938, 258);
+            this.btn_salirPropietario.Name = "btn_salirPropietario";
+            this.btn_salirPropietario.Size = new System.Drawing.Size(30, 30);
+            this.btn_salirPropietario.TabIndex = 16;
+            this.btn_salirPropietario.UseVisualStyleBackColor = true;
+            this.btn_salirPropietario.Click += new System.EventHandler(this.btn_salirPropietario_Click);
+            // 
             // ncliente_btn
             // 
             this.ncliente_btn.Controls.Add(this.ref_btn);
@@ -192,6 +401,20 @@ namespace ProyectoRentaDeBarcos
             this.ncliente_btn.Text = "Clientes";
             this.ncliente_btn.UseVisualStyleBackColor = true;
             this.ncliente_btn.Click += new System.EventHandler(this.tabClientes_Click);
+            // 
+            // ref_btn
+            // 
+            this.ref_btn.BackColor = System.Drawing.Color.Transparent;
+            this.ref_btn.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
+            this.ref_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ref_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ref_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ref_btn.Location = new System.Drawing.Point(945, 11);
+            this.ref_btn.Name = "ref_btn";
+            this.ref_btn.Size = new System.Drawing.Size(23, 23);
+            this.ref_btn.TabIndex = 31;
+            this.ref_btn.UseVisualStyleBackColor = false;
+            this.ref_btn.Click += new System.EventHandler(this.ref_btn_Click);
             // 
             // ncliente
             // 
@@ -332,6 +555,20 @@ namespace ProyectoRentaDeBarcos
             this.btn_eliminarCliente.UseVisualStyleBackColor = false;
             this.btn_eliminarCliente.Click += new System.EventHandler(this.btn_eliminarCliente_Click);
             // 
+            // btn_salirCliente
+            // 
+            this.btn_salirCliente.BackColor = System.Drawing.Color.White;
+            this.btn_salirCliente.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
+            this.btn_salirCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_salirCliente.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_salirCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salirCliente.Location = new System.Drawing.Point(938, 258);
+            this.btn_salirCliente.Name = "btn_salirCliente";
+            this.btn_salirCliente.Size = new System.Drawing.Size(30, 30);
+            this.btn_salirCliente.TabIndex = 23;
+            this.btn_salirCliente.UseVisualStyleBackColor = false;
+            this.btn_salirCliente.Click += new System.EventHandler(this.btn_salirCliente_Click);
+            // 
             // tabRentas
             // 
             this.tabRentas.Controls.Add(this.button3);
@@ -349,6 +586,19 @@ namespace ProyectoRentaDeBarcos
             this.tabRentas.Text = "Rentas";
             this.tabRentas.UseVisualStyleBackColor = true;
             this.tabRentas.Click += new System.EventHandler(this.tabRentas_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(757, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(23, 23);
+            this.button3.TabIndex = 27;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tb_buscarRentas
             // 
@@ -390,7 +640,7 @@ namespace ProyectoRentaDeBarcos
             this.dgv_registroRentas.Name = "dgv_registroRentas";
             dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
             this.dgv_registroRentas.RowsDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgv_registroRentas.Size = new System.Drawing.Size(758, 196);
+            this.dgv_registroRentas.Size = new System.Drawing.Size(946, 196);
             this.dgv_registroRentas.TabIndex = 17;
             this.dgv_registroRentas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroRentas_CellClick);
             // 
@@ -471,6 +721,19 @@ namespace ProyectoRentaDeBarcos
             this.btn_agregarRenta.Text = "Nueva Renta";
             this.btn_agregarRenta.UseVisualStyleBackColor = false;
             this.btn_agregarRenta.Click += new System.EventHandler(this.btn_agregarRenta_Click);
+            // 
+            // btn_salirRenta
+            // 
+            this.btn_salirRenta.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
+            this.btn_salirRenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_salirRenta.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_salirRenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salirRenta.Location = new System.Drawing.Point(938, 258);
+            this.btn_salirRenta.Name = "btn_salirRenta";
+            this.btn_salirRenta.Size = new System.Drawing.Size(30, 30);
+            this.btn_salirRenta.TabIndex = 16;
+            this.btn_salirRenta.UseVisualStyleBackColor = true;
+            this.btn_salirRenta.Click += new System.EventHandler(this.btn_salirRenta_Click);
             // 
             // nbarco
             // 
@@ -616,6 +879,34 @@ namespace ProyectoRentaDeBarcos
             this.ColumnOcupado.HeaderText = "Ocupado";
             this.ColumnOcupado.Name = "ColumnOcupado";
             // 
+            // btn_Salir
+            // 
+            this.btn_Salir.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
+            this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Salir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Salir.Location = new System.Drawing.Point(938, 258);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(30, 30);
+            this.btn_Salir.TabIndex = 39;
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
+            // btn_Actualizar
+            // 
+            this.btn_Actualizar.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
+            this.btn_Actualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Actualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Actualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_Actualizar.Location = new System.Drawing.Point(945, 13);
+            this.btn_Actualizar.Name = "btn_Actualizar";
+            this.btn_Actualizar.Size = new System.Drawing.Size(23, 23);
+            this.btn_Actualizar.TabIndex = 6;
+            this.btn_Actualizar.UseVisualStyleBackColor = true;
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
+            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.act_btn);
@@ -696,7 +987,7 @@ namespace ProyectoRentaDeBarcos
             this.dgv_registroEmpleado.Name = "dgv_registroEmpleado";
             dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
             this.dgv_registroEmpleado.RowsDefaultCellStyle = dataGridViewCellStyle20;
-            this.dgv_registroEmpleado.Size = new System.Drawing.Size(893, 189);
+            this.dgv_registroEmpleado.Size = new System.Drawing.Size(961, 189);
             this.dgv_registroEmpleado.TabIndex = 21;
             this.dgv_registroEmpleado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroEmpleado_CellClick);
             // 
@@ -756,134 +1047,31 @@ namespace ProyectoRentaDeBarcos
             this.btn_eliminarEmpleado.UseVisualStyleBackColor = false;
             this.btn_eliminarEmpleado.Click += new System.EventHandler(this.btn_eliminarEmpleado_Click);
             // 
-            // tabPage2
+            // btn_salirEmpleado
             // 
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.tb_buscarPropietario);
-            this.tabPage2.Controls.Add(this.dgv_registroPropietario);
-            this.tabPage2.Controls.Add(this.btn_eliminarPropietario);
-            this.tabPage2.Controls.Add(this.btn_actualizarPropietario);
-            this.tabPage2.Controls.Add(this.btn_agregarPropietario);
-            this.tabPage2.Controls.Add(this.btn_salirPropietario);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(974, 399);
-            this.tabPage2.TabIndex = 4;
-            this.tabPage2.Text = "Propietarios";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            this.btn_salirEmpleado.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
+            this.btn_salirEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_salirEmpleado.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_salirEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salirEmpleado.Location = new System.Drawing.Point(938, 258);
+            this.btn_salirEmpleado.Name = "btn_salirEmpleado";
+            this.btn_salirEmpleado.Size = new System.Drawing.Size(30, 30);
+            this.btn_salirEmpleado.TabIndex = 20;
+            this.btn_salirEmpleado.UseVisualStyleBackColor = true;
+            this.btn_salirEmpleado.Click += new System.EventHandler(this.btn_salirEmpleado_Click);
             // 
-            // tb_buscarPropietario
+            // button1
             // 
-            this.tb_buscarPropietario.Location = new System.Drawing.Point(6, 12);
-            this.tb_buscarPropietario.Name = "tb_buscarPropietario";
-            this.tb_buscarPropietario.Size = new System.Drawing.Size(221, 20);
-            this.tb_buscarPropietario.TabIndex = 18;
-            this.tb_buscarPropietario.Text = "Buscar";
-            this.tb_buscarPropietario.TextChanged += new System.EventHandler(this.tb_buscarPropietario_TextChanged);
-            // 
-            // dgv_registroPropietario
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgv_registroPropietario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_registroPropietario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_registroPropietario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_registroPropietario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdPropietario,
-            this.nombrePropietario,
-            this.apellidoPPropietario,
-            this.apellidoMPropietario,
-            this.telefonoPropietario,
-            this.correoPropietario});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_registroPropietario.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgv_registroPropietario.EnableHeadersVisualStyles = false;
-            this.dgv_registroPropietario.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgv_registroPropietario.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgv_registroPropietario.Location = new System.Drawing.Point(6, 38);
-            this.dgv_registroPropietario.Name = "dgv_registroPropietario";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_registroPropietario.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
-            this.dgv_registroPropietario.RowsDefaultCellStyle = dataGridViewCellStyle11;
-            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
-            this.dgv_registroPropietario.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_registroPropietario.Size = new System.Drawing.Size(688, 189);
-            this.dgv_registroPropietario.TabIndex = 17;
-            this.dgv_registroPropietario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroPropietario_CellClick);
-            this.dgv_registroPropietario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroPropietario_CellContentClick);
-            // 
-            // btn_eliminarPropietario
-            // 
-            this.btn_eliminarPropietario.BackColor = System.Drawing.Color.Red;
-            this.btn_eliminarPropietario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_eliminarPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_eliminarPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminarPropietario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_eliminarPropietario.Location = new System.Drawing.Point(310, 242);
-            this.btn_eliminarPropietario.Name = "btn_eliminarPropietario";
-            this.btn_eliminarPropietario.Size = new System.Drawing.Size(85, 23);
-            this.btn_eliminarPropietario.TabIndex = 14;
-            this.btn_eliminarPropietario.Text = "Eliminar";
-            this.btn_eliminarPropietario.UseVisualStyleBackColor = false;
-            this.btn_eliminarPropietario.Click += new System.EventHandler(this.btn_eliminarPropietario_Click);
-            // 
-            // btn_actualizarPropietario
-            // 
-            this.btn_actualizarPropietario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
-            this.btn_actualizarPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_actualizarPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_actualizarPropietario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_actualizarPropietario.Location = new System.Drawing.Point(189, 242);
-            this.btn_actualizarPropietario.Name = "btn_actualizarPropietario";
-            this.btn_actualizarPropietario.Size = new System.Drawing.Size(101, 23);
-            this.btn_actualizarPropietario.TabIndex = 13;
-            this.btn_actualizarPropietario.Text = "Actualizar";
-            this.btn_actualizarPropietario.UseVisualStyleBackColor = false;
-            this.btn_actualizarPropietario.Click += new System.EventHandler(this.btn_actualizarPropietario_Click);
-            // 
-            // btn_agregarPropietario
-            // 
-            this.btn_agregarPropietario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
-            this.btn_agregarPropietario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_agregarPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_agregarPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregarPropietario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_agregarPropietario.Location = new System.Drawing.Point(6, 242);
-            this.btn_agregarPropietario.Name = "btn_agregarPropietario";
-            this.btn_agregarPropietario.Size = new System.Drawing.Size(164, 23);
-            this.btn_agregarPropietario.TabIndex = 12;
-            this.btn_agregarPropietario.Text = "Nuevo Propietario";
-            this.btn_agregarPropietario.UseVisualStyleBackColor = false;
-            this.btn_agregarPropietario.Click += new System.EventHandler(this.btn_agregarPropietario_Click);
+            this.button1.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(878, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 25;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // tabPage3
             // 
@@ -902,6 +1090,21 @@ namespace ProyectoRentaDeBarcos
             this.tabPage3.Text = "Tripulaciones";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Location = new System.Drawing.Point(753, 14);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(23, 23);
+            this.button4.TabIndex = 27;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tb_buscarT
             // 
@@ -936,9 +1139,36 @@ namespace ProyectoRentaDeBarcos
             dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(196)))), ((int)(((byte)(182)))));
             this.dgv_registroT.RowsDefaultCellStyle = dataGridViewCellStyle23;
-            this.dgv_registroT.Size = new System.Drawing.Size(768, 193);
+            this.dgv_registroT.Size = new System.Drawing.Size(960, 193);
             this.dgv_registroT.TabIndex = 13;
             this.dgv_registroT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroT_CellClick);
+            // 
+            // NumRentaT
+            // 
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            this.NumRentaT.DefaultCellStyle = dataGridViewCellStyle22;
+            this.NumRentaT.HeaderText = "No. de renta";
+            this.NumRentaT.Name = "NumRentaT";
+            this.NumRentaT.Width = 80;
+            // 
+            // NumEmpleadoT
+            // 
+            this.NumEmpleadoT.HeaderText = "No. de empleado";
+            this.NumEmpleadoT.Name = "NumEmpleadoT";
+            this.NumEmpleadoT.Width = 80;
+            // 
+            // cargo
+            // 
+            this.cargo.HeaderText = "Cargo";
+            this.cargo.Name = "cargo";
+            this.cargo.Width = 80;
+            // 
+            // tarifa
+            // 
+            this.tarifa.HeaderText = "Tarifa por hora";
+            this.tarifa.Name = "tarifa";
+            this.tarifa.Width = 120;
             // 
             // btn_eliminarT
             // 
@@ -984,155 +1214,6 @@ namespace ProyectoRentaDeBarcos
             this.btn_agregarT.UseVisualStyleBackColor = false;
             this.btn_agregarT.Click += new System.EventHandler(this.btn_agregarT_Click);
             // 
-            // ref_btn
-            // 
-            this.ref_btn.BackColor = System.Drawing.Color.Transparent;
-            this.ref_btn.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
-            this.ref_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ref_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.ref_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ref_btn.Location = new System.Drawing.Point(945, 11);
-            this.ref_btn.Name = "ref_btn";
-            this.ref_btn.Size = new System.Drawing.Size(23, 23);
-            this.ref_btn.TabIndex = 31;
-            this.ref_btn.UseVisualStyleBackColor = false;
-            this.ref_btn.Click += new System.EventHandler(this.ref_btn_Click);
-            // 
-            // btn_salirCliente
-            // 
-            this.btn_salirCliente.BackColor = System.Drawing.Color.White;
-            this.btn_salirCliente.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
-            this.btn_salirCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_salirCliente.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_salirCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salirCliente.Location = new System.Drawing.Point(938, 258);
-            this.btn_salirCliente.Name = "btn_salirCliente";
-            this.btn_salirCliente.Size = new System.Drawing.Size(30, 30);
-            this.btn_salirCliente.TabIndex = 23;
-            this.btn_salirCliente.UseVisualStyleBackColor = false;
-            this.btn_salirCliente.Click += new System.EventHandler(this.btn_salirCliente_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(757, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(23, 23);
-            this.button3.TabIndex = 27;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btn_salirRenta
-            // 
-            this.btn_salirRenta.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
-            this.btn_salirRenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_salirRenta.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_salirRenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salirRenta.Location = new System.Drawing.Point(938, 258);
-            this.btn_salirRenta.Name = "btn_salirRenta";
-            this.btn_salirRenta.Size = new System.Drawing.Size(30, 30);
-            this.btn_salirRenta.TabIndex = 16;
-            this.btn_salirRenta.UseVisualStyleBackColor = true;
-            this.btn_salirRenta.Click += new System.EventHandler(this.btn_salirRenta_Click);
-            // 
-            // btn_Salir
-            // 
-            this.btn_Salir.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
-            this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Salir.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Salir.Location = new System.Drawing.Point(938, 258);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(30, 30);
-            this.btn_Salir.TabIndex = 39;
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
-            // 
-            // btn_Actualizar
-            // 
-            this.btn_Actualizar.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
-            this.btn_Actualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Actualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Actualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_Actualizar.Location = new System.Drawing.Point(945, 13);
-            this.btn_Actualizar.Name = "btn_Actualizar";
-            this.btn_Actualizar.Size = new System.Drawing.Size(23, 23);
-            this.btn_Actualizar.TabIndex = 6;
-            this.btn_Actualizar.UseVisualStyleBackColor = true;
-            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
-            // 
-            // btn_salirEmpleado
-            // 
-            this.btn_salirEmpleado.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
-            this.btn_salirEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_salirEmpleado.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_salirEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salirEmpleado.Location = new System.Drawing.Point(938, 258);
-            this.btn_salirEmpleado.Name = "btn_salirEmpleado";
-            this.btn_salirEmpleado.Size = new System.Drawing.Size(30, 30);
-            this.btn_salirEmpleado.TabIndex = 20;
-            this.btn_salirEmpleado.UseVisualStyleBackColor = true;
-            this.btn_salirEmpleado.Click += new System.EventHandler(this.btn_salirEmpleado_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(878, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 23);
-            this.button1.TabIndex = 25;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(671, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(23, 23);
-            this.button2.TabIndex = 26;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btn_salirPropietario
-            // 
-            this.btn_salirPropietario.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
-            this.btn_salirPropietario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_salirPropietario.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_salirPropietario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salirPropietario.Location = new System.Drawing.Point(938, 258);
-            this.btn_salirPropietario.Name = "btn_salirPropietario";
-            this.btn_salirPropietario.Size = new System.Drawing.Size(30, 30);
-            this.btn_salirPropietario.TabIndex = 16;
-            this.btn_salirPropietario.UseVisualStyleBackColor = true;
-            this.btn_salirPropietario.Click += new System.EventHandler(this.btn_salirPropietario_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.refresh;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(753, 14);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(23, 23);
-            this.button4.TabIndex = 27;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // btn_salirT
             // 
             this.btn_salirT.BackgroundImage = global::ProyectoRentaDeBarcos.Properties.Resources.logout__1_;
@@ -1146,87 +1227,6 @@ namespace ProyectoRentaDeBarcos
             this.btn_salirT.UseVisualStyleBackColor = true;
             this.btn_salirT.Click += new System.EventHandler(this.btn_salirT_Click);
             // 
-            // IdPropietario
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.IdPropietario.DefaultCellStyle = dataGridViewCellStyle3;
-            this.IdPropietario.HeaderText = "No. de propietario";
-            this.IdPropietario.Name = "IdPropietario";
-            // 
-            // nombrePropietario
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.nombrePropietario.DefaultCellStyle = dataGridViewCellStyle4;
-            this.nombrePropietario.HeaderText = "Nombre";
-            this.nombrePropietario.Name = "nombrePropietario";
-            // 
-            // apellidoPPropietario
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.apellidoPPropietario.DefaultCellStyle = dataGridViewCellStyle5;
-            this.apellidoPPropietario.HeaderText = "Apellido paterno";
-            this.apellidoPPropietario.Name = "apellidoPPropietario";
-            // 
-            // apellidoMPropietario
-            // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.apellidoMPropietario.DefaultCellStyle = dataGridViewCellStyle6;
-            this.apellidoMPropietario.HeaderText = "Apellido materno";
-            this.apellidoMPropietario.Name = "apellidoMPropietario";
-            // 
-            // telefonoPropietario
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.telefonoPropietario.DefaultCellStyle = dataGridViewCellStyle7;
-            this.telefonoPropietario.HeaderText = "Teléfono";
-            this.telefonoPropietario.Name = "telefonoPropietario";
-            // 
-            // correoPropietario
-            // 
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.correoPropietario.DefaultCellStyle = dataGridViewCellStyle8;
-            this.correoPropietario.HeaderText = "Correo electrónico";
-            this.correoPropietario.Name = "correoPropietario";
-            // 
-            // NumRentaT
-            // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            this.NumRentaT.DefaultCellStyle = dataGridViewCellStyle22;
-            this.NumRentaT.HeaderText = "No. de renta";
-            this.NumRentaT.Name = "NumRentaT";
-            this.NumRentaT.Width = 80;
-            // 
-            // NumEmpleadoT
-            // 
-            this.NumEmpleadoT.HeaderText = "No. de empleado";
-            this.NumEmpleadoT.Name = "NumEmpleadoT";
-            this.NumEmpleadoT.Width = 80;
-            // 
-            // cargo
-            // 
-            this.cargo.HeaderText = "Cargo";
-            this.cargo.Name = "cargo";
-            this.cargo.Width = 80;
-            // 
-            // tarifa
-            // 
-            this.tarifa.HeaderText = "Tarifa por hora";
-            this.tarifa.Name = "tarifa";
-            this.tarifa.Width = 120;
-            // 
             // InterfazV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1239,6 +1239,9 @@ namespace ProyectoRentaDeBarcos
             this.Text = "Sistema de renta de barcos";
             this.Load += new System.EventHandler(this.InterfazV2_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_registroPropietario)).EndInit();
             this.ncliente_btn.ResumeLayout(false);
             this.ncliente_btn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registroClientes)).EndInit();
@@ -1251,9 +1254,6 @@ namespace ProyectoRentaDeBarcos
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registroEmpleado)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_registroPropietario)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registroT)).EndInit();
