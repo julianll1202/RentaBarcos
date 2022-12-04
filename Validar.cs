@@ -32,7 +32,9 @@ namespace ProyectoRentaDeBarcos
                 }
             }
             catch (Exception e)
-            { }
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         public static void SoloNumeros(KeyPressEventArgs v)
@@ -58,7 +60,9 @@ namespace ProyectoRentaDeBarcos
                 }
             }
             catch (Exception e)
-            { }
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

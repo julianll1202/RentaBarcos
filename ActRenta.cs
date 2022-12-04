@@ -19,8 +19,6 @@ namespace ProyectoRentaDeBarcos
         private ClienteConsultas mClienteConsultas = new ClienteConsultas();
         private BarcoConsultas mBarcoConsultas = new BarcoConsultas();
 
-        List<int> clientes, barcos;
-
         public string numRenta { get; set; }
         public DateTime fRenta { get; set; }
         public DateTime fInicio { get; set; }
