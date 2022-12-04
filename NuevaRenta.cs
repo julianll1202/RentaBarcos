@@ -82,6 +82,10 @@ namespace ProyectoRentaDeBarcos
                  
         }
 
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         private void agregar_btn_Click(object sender, EventArgs e)
         {
