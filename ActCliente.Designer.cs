@@ -249,6 +249,7 @@
             // 
             // tb_numCliente
             // 
+            this.tb_numCliente.Enabled = false;
             this.tb_numCliente.Location = new System.Drawing.Point(108, 48);
             this.tb_numCliente.Name = "tb_numCliente";
             this.tb_numCliente.Size = new System.Drawing.Size(100, 20);

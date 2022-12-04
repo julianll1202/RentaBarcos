@@ -48,6 +48,7 @@
             // 
             // tb_numProp
             // 
+            this.tb_numProp.Enabled = false;
             this.tb_numProp.Location = new System.Drawing.Point(112, 67);
             this.tb_numProp.Name = "tb_numProp";
             this.tb_numProp.Size = new System.Drawing.Size(100, 20);
