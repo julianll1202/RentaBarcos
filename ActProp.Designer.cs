@@ -79,10 +79,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(6, 40);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(353, 13);
+            this.label8.Size = new System.Drawing.Size(374, 13);
             this.label8.TabIndex = 96;
-            this.label8.Text = "Llene los campos con la información correspondiente al nuevo propietario";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.label8.Text = "Llene los campos con la información correspondiente al propietario a modificar";
             // 
             // tb_correo
             // 

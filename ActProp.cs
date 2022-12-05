@@ -67,10 +67,6 @@ namespace ProyectoRentaDeBarcos
             }
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void ActProp_Load(object sender, EventArgs e)
         {
