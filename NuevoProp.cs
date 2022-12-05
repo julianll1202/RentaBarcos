@@ -39,11 +39,6 @@ namespace ProyectoRentaDeBarcos
             mPropietario.correoPropietario = tb_correo.Text.Trim();
         }
 
-        private void tb_tel_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void agregar_btn_Click(object sender, EventArgs e)
         {
             cargarDatosPropietario();

@@ -53,7 +53,6 @@
             this.label9.Size = new System.Drawing.Size(123, 24);
             this.label9.TabIndex = 93;
             this.label9.Text = "Nueva renta";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -116,7 +115,6 @@
             this.label.Size = new System.Drawing.Size(120, 13);
             this.label.TabIndex = 82;
             this.label.Text = "Fecha de Inicio de viaje";
-            this.label.Click += new System.EventHandler(this.label_Click);
             // 
             // cancel_btn
             // 
@@ -145,7 +143,6 @@
             this.fecha_in.Name = "fecha_in";
             this.fecha_in.Size = new System.Drawing.Size(153, 20);
             this.fecha_in.TabIndex = 95;
-            this.fecha_in.ValueChanged += new System.EventHandler(this.fecha_in_ValueChanged);
             // 
             // fecha_fin
             // 

@@ -271,7 +271,6 @@ namespace ProyectoRentaDeBarcos
             this.dgv_registroPropietario.Size = new System.Drawing.Size(962, 189);
             this.dgv_registroPropietario.TabIndex = 17;
             this.dgv_registroPropietario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroPropietario_CellClick);
-            this.dgv_registroPropietario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_registroPropietario_CellContentClick);
             // 
             // IdPropietario
             // 
@@ -585,7 +584,6 @@ namespace ProyectoRentaDeBarcos
             this.tabRentas.TabIndex = 1;
             this.tabRentas.Text = "Rentas";
             this.tabRentas.UseVisualStyleBackColor = true;
-            this.tabRentas.Click += new System.EventHandler(this.tabRentas_Click);
             // 
             // button3
             // 
@@ -923,7 +921,6 @@ namespace ProyectoRentaDeBarcos
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Empleados";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // act_btn
             // 
@@ -1089,7 +1086,6 @@ namespace ProyectoRentaDeBarcos
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "Tripulaciones";
             this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // button4
             // 
@@ -1237,7 +1233,6 @@ namespace ProyectoRentaDeBarcos
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "InterfazV2";
             this.Text = "Sistema de renta de barcos";
-            this.Load += new System.EventHandler(this.InterfazV2_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();

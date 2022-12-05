@@ -225,7 +225,6 @@
             this.Controls.Add(this.agregar_btn);
             this.Name = "NuevoEmp";
             this.Text = "Nuevo Empleado";
-            this.Load += new System.EventHandler(this.NuevoEmp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

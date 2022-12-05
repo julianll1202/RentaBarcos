@@ -113,7 +113,6 @@
             this.label9.Size = new System.Drawing.Size(169, 24);
             this.label9.TabIndex = 59;
             this.label9.Text = "Actualizar cliente";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // tb_col
             // 

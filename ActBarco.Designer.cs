@@ -59,7 +59,6 @@
             this.label9.Size = new System.Drawing.Size(160, 24);
             this.label9.TabIndex = 35;
             this.label9.Text = "Actualizar barco";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // tb_largo
             // 
@@ -76,7 +75,6 @@
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 32;
             this.label7.Text = "Largo (pies)";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // tb_cap
             // 

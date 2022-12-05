@@ -306,13 +306,6 @@ namespace ProyectoRentaDeBarcos
             Application.Exit();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
 
         private void tb_NombreCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -537,11 +530,6 @@ namespace ProyectoRentaDeBarcos
             Application.Exit();
         }
 
-        private void tabRentas_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tb_nombrePropietario_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validar.SoloLetras(e);
@@ -663,11 +651,6 @@ namespace ProyectoRentaDeBarcos
         private void btn_salirRenta_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void tb_Cliente_KeyPress(object sender, KeyPressEventArgs e)
@@ -802,11 +785,6 @@ namespace ProyectoRentaDeBarcos
             cargarPropietarios();
         }
 
-        private void dgv_registroPropietario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void n_emp_btn_Click(object sender, EventArgs e)
         {
             var form_n_emp = new NuevoEmp();
@@ -843,11 +821,6 @@ namespace ProyectoRentaDeBarcos
         private void btn_salirT_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void InterfazV2_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void tb_numRentaT_KeyPress(object sender, KeyPressEventArgs e)

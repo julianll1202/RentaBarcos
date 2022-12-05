@@ -105,7 +105,6 @@
             this.tb_tel.Name = "tb_tel";
             this.tb_tel.Size = new System.Drawing.Size(100, 20);
             this.tb_tel.TabIndex = 69;
-            this.tb_tel.TextChanged += new System.EventHandler(this.tb_tel_TextChanged);
             // 
             // label4
             // 

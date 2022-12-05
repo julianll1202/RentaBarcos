@@ -44,11 +44,6 @@ namespace ProyectoRentaDeBarcos
             mEmpleado.correoEmpleado = tb_correo.Text.Trim();
             mEmpleado.puesto = tb_puesto.Text.Trim();
         }
-        private void NuevoEmp_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void agregar_btn_Click(object sender, EventArgs e)
         {
             cargarDatosEmpleado();

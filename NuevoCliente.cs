@@ -49,21 +49,6 @@ namespace ProyectoRentaDeBarcos
             mCliente.codigoPostal = tb_cp.Text.Trim();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NuevoCliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void agregar_btn_Click(object sender, EventArgs e)
         {
             cargarDatosCliente();

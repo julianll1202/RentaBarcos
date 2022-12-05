@@ -63,7 +63,6 @@
             this.label9.Size = new System.Drawing.Size(139, 24);
             this.label9.TabIndex = 35;
             this.label9.Text = "Nuevo cliente";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -74,7 +73,6 @@
             this.label8.Size = new System.Drawing.Size(335, 13);
             this.label8.TabIndex = 34;
             this.label8.Text = "Llene los campos con la información correspondiente al nuevo cliente";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // tb_col
             // 
@@ -287,7 +285,6 @@
             this.Controls.Add(this.agregar_btn);
             this.Name = "NuevoCliente";
             this.Text = "NuevoCliente";
-            this.Load += new System.EventHandler(this.NuevoCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

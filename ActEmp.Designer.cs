@@ -200,7 +200,6 @@
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 78;
             this.label2.Text = "No. de empleado";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tb_numEmp
             // 

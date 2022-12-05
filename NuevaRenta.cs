@@ -36,20 +36,6 @@ namespace ProyectoRentaDeBarcos
             mRenta.Cliente = int.Parse(lb_clientes.Text);
             mRenta.Barco = int.Parse(lb_barcos.Text);
         }
-        private void label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fecha_in_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void NuevaRenta_Load(object sender, EventArgs e)
         {

@@ -63,11 +63,6 @@ namespace ProyectoRentaDeBarcos
             }
         }
 
-        private void NuevoBarco_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -62,20 +62,6 @@ namespace ProyectoRentaDeBarcos
             mBarco.capacidad = int.Parse(tb_cap.Text.Trim());
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
         private int getFolioIfExist()
         {
             if (!tb_numbarco.Text.Trim().Equals(""))
